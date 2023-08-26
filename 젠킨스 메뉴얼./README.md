@@ -17,5 +17,6 @@
     docker cp /vagrant/spring-cicd-v1.0.0.war tomcat:/usr/local/tomcat/webapps/
     curl http://localhost:8888/spring-cicd-v1.0.0/
     
-    *다른 터미널에서....
+    ### 다른 터미널에서....
     ngrok http 8080
+    
