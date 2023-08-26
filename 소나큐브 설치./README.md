@@ -13,12 +13,12 @@
         <image_name>   
 
 ## 소나큐브 실행
-docker run --rm \
-        -e SONAR_HOST_URL=$SONAR_HOST_URL \
-        -e SONAR_LOGIN=$SONAR_AUTH_TOKEN \
-        -e SONAR_SCANNER_OPTS='-Dsonar.projectKey=sonar -Dsonar.java.binaries=./target -Dsonar.verbose=true' \
-        -v /var/lib/docker/volumes/jenkins-volume/_data/workspace/project:/usr/src \
-           sonarsource/sonar-scanner-cli
+        docker run --rm \
+                -e SONAR_HOST_URL=$SONAR_HOST_URL \
+                -e SONAR_LOGIN=$SONAR_AUTH_TOKEN \
+                -e SONAR_SCANNER_OPTS='-Dsonar.projectKey=sonar -Dsonar.java.binaries=./target -Dsonar.verbose=true' \
+                -v /var/lib/docker/volumes/jenkins-volume/_data/workspace/project:/usr/src \
+                   sonarsource/sonar-scanner-cli
            
 # 설치 완료 후 localhost:9000 접속
         https://localhost:9000
