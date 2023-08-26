@@ -1,7 +1,7 @@
 # 젠킨스 설치&실행
-###젠킨스는 도커서버에서 도커로 진행
+### 젠킨스는 도커서버에서 도커로 진행
 
-##젠킨스 런
+## 젠킨스 런
 
     docker run -itd -p 8080:8080 --name jenkins \
         -v jenkins-volume:/var/jenkins_home/ \
@@ -9,7 +9,7 @@
         -v $(which docker):/usr/bin/docker \
         --group-add 998 jenkins/jenkins:2.387.2-lts
 
-##젠킨스 실행을 위한 ngrok 실행
+## 젠킨스 실행을 위한 ngrok 실행
 
     ### 기존 도커이미지 확인-정지-삭제
     docker pull tomcat:10.0-jdk17
