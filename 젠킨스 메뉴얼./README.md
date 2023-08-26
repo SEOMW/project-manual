@@ -19,4 +19,12 @@
     
 ### 다른 터미널에서 ngrok 접속
     ngrok http 8080
+
+## 젠킨스 접속후 첫 세팅을 위한 소스확인
+        docker exec -t jenkins /bin/bash -c "cat /var/jenkins_home/secrets/initialAdminPassword"
+        curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+             /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+# 로그인 확인
+
     
