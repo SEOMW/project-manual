@@ -1,6 +1,6 @@
 # 도커 환경 구성
 ## 도커 서버
--Vagrant.configure("2") do |config|
+- Vagrant.configure("2") do |config|
     config.vm.define "dock" do |dock|
         dock.vm.hostname = "docker-registry"
         dock.vm.provider "virtualbox" do |vb|
