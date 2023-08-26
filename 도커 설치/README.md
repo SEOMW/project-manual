@@ -1,5 +1,5 @@
 # 도커 환경 구성
-## 도커 서버
+## 도커 서버 vagrant 구성
      Vagrant.configure("2") do |config|
         config.vm.define "dock" do |dock|
             dock.vm.hostname = "docker-registry"
@@ -12,4 +12,5 @@
             dock.vm.network "public_network", ip: "192.168.x.x" # 원하는 공개 네트워크 IP 주소 입력
         end
     end
+
 
