@@ -11,7 +11,7 @@
 
 ##젠킨스 실행을 위한 ngrok 실행
 
-    * 기존 도커이미지 확인-정지-삭제
+    ### 기존 도커이미지 확인-정지-삭제
     docker pull tomcat:10.0-jdk17
     docker run -itd -p 8888:8080 --name tomcat tomcat:10.0-jdk17
     docker cp /vagrant/spring-cicd-v1.0.0.war tomcat:/usr/local/tomcat/webapps/
