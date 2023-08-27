@@ -1,5 +1,5 @@
 # 소나큐브 설치
-### 소나큐브역시 도커서버에서 도커이미지로 실행
+### 소나큐브 도커서버에서 도커이미지로 실행
 
 ## 볼륨생성 
     docker volume create --name sonarqube_data
