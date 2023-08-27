@@ -9,7 +9,6 @@
                 vb.memory = 6144
             end
             dock.vm.network "private_network", ip: "192.168.10.14"
-            dock.vm.network "public_network", ip: "192.168.x.x" # 원하는 공개 네트워크 IP 주소 입력
         end
     end
 
